@@ -31,16 +31,19 @@ $(document).ready(function(){
   $('#das').on('click', function(e){
     var guess_result = $(this).attr('name');
     sendResult(guess_result);
+    Materialize.toast(toastMessage(guess_result), 4000);
   });
 
   $('#der').on('click', function(e){
     var guess_result = $(this).attr('name');
     sendResult(guess_result);
+    Materialize.toast(toastMessage(guess_result), 4000);
   });
 
   $('#die').on('click', function(e){
     var guess_result = $(this).attr('name');
     sendResult(guess_result);
+    Materialize.toast(toastMessage(guess_result), 4000);
   });
 
 

@@ -5637,8 +5637,8 @@ small {
   @media only screen and (min-width : 993px) {
     #toast-container {
       min-width: 8%;
-      top: 10%;
-      right: 7%; } }
+      top: 70%;
+      right: 19%; } }
 
 .toast {
   border-radius: 2px;

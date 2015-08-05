@@ -1,12 +1,11 @@
 
 var sa = '//localhost:3000';
-var userToken;
-var userId;
-var wordGen;
-var searchRequest = '';
-
 var checkGuess = function(userGuess) {
   return userGuess === wordGen ? true : false;
+};
+var toastMessage = function(guess_result) {
+  // console.log(checkGuess(guess_result));
+  return checkGuess(guess_result) ? "Bingo! It's " + wordGen : "Wrong! It's actually " + wordGen
 };
 
 // sends a sign-in request; hides unnecessary elements
@@ -35,8 +34,8 @@ var signIn = function() {
     alert('Authorization failed. Please check login and password');
     $('#result').val('login failed');
   });
-  // $('#email').val('');
-  // $('#password').val('');
+  $('#email').val('');
+  $('#password').val('');
 };
 
 // registers a new user with email/password combo
