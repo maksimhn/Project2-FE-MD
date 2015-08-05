@@ -3,20 +3,33 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Starter Template - Materialize</title>
+  <title>Deutche noun quiz</title>
 
   <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.7.0/vis.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
+
+
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
+
+
+  <nav class="light-green lighten-1" role="navigation" id="mainnav">
+    <div class="nav-wrapper container"><!-- <a id="logo-container" href="#" class="brand-logo">Logo</a> -->
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><i class="material-icons" id="email_icon">email</i></li>
+      <li><input placeholder="Email" id="email" type="email"></li>
+      <li><i class="material-icons" id="vpn_icon">vpn_key</i></li>
+      <li><input placeholder="Password" id="password" type="password" class="validate"></li>
+      <li><a class="green btn-large">Login</a></li>
+      <li id="or">or</li>
+      <li><a class="red btn-large">Register</a></li>
+
+    </ul>
+
 
       <ul id="nav-mobile" class="side-nav">
         <li><a href="#">Navbar Link</a></li>
@@ -24,15 +37,18 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
+
+
+
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center orange-text">Starter Template</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+      <h2 class="header center green-text">Guess a Deutche noun's gender quiz!</h2>
+      <div class="row center" id="picframe">
+        <!-- <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5> -->
       </div>
       <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light red">Get Started</a>
       </div>
       <br><br>
 
@@ -81,7 +97,7 @@
     </div>
   </div>
 
-  <footer class="page-footer orange">
+  <footer class="page-footer light-green">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">

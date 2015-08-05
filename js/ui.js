@@ -1,4 +1,6 @@
-// $(document).on('load', function(){
+// $(document)..ready(function(){
+
+  // $(".dropdown-button").dropdown();
 
   $('#start').on('click', function(e){
     nextWord();

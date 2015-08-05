@@ -12,3 +12,20 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+#email_icon, #vpn_icon {
+  margin-right: 5px;
+}
+
+#email, #password {
+  margin-right: 20px;
+}
+
+#mainnav {
+  height: 72px;
+}
+
+#or {
+  margin-left: 15px;
+  margin-right: 15px;
+}
