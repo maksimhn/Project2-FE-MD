@@ -76,8 +76,7 @@ var nextWord = function() {
   }).done(function(data, textStatus, jqxhr){
     $('#wordfield').text(data.noun);
     wordGen = data.gen;
-    Search(data.noun);
-    $('#footer').append(searchRequest);
+    $("#picbox").attr("src", data.pic);
     // alert('Recieved: ' + data.noun + ', and it is a ' + data.gen);
     // search API trigger
   }).fail(function(jqxhr, textStatus, errorThrown){

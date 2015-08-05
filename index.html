@@ -22,11 +22,11 @@
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li><i class="material-icons" id="email_icon">email</i></li>
       <li><input placeholder="Email" id="email" type="email"></li>
-      <li><i class="material-icons" id="vpn_icon">vpn_key</i></li>
+      <li><i class="material-icons" id="vpn_icon">lock_outline</i></li>
       <li><input placeholder="Password" id="password" type="password" class="validate"></li>
-      <li><a class="green btn-large">Login</a></li>
+      <li><a class="green btn-large" id="login">Login</a></li>
       <li id="or">or</li>
-      <li><a class="red btn-large">Register</a></li>
+      <li><a class="red btn-large" id="register">Register</a></li>
 
     </ul>
 
@@ -43,16 +43,39 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h2 class="header center green-text">Guess a Deutche noun's gender quiz!</h2>
-      <div class="row center" id="picframe">
+      <h3 class="header center green-text">Guess a Deutche noun's gender quiz!</h3>
+      <div class="row center light-green z-depth-2" id="picframe">
+        <img class="card-panel" id="picbox" src=>
         <!-- <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5> -->
       </div>
+
+
       <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light red">Get Started</a>
+        <div class="col l4 offset-l4 offset-s5">
+          <div class="card-panel red z-depth-1" id="wordframe">
+            <span class="white-text" id="wordfield">Word
+            </span>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="row center">
+        <a id="start" class="btn-large waves-effect waves-light green z-depth-2">Hit me</a>
       </div>
       <br><br>
 
     </div>
+  </div>
+
+
+
+  <div class="container center" id="genderbuttons">
+    <a class="btn tooltipped red z-depth-2" data-position="bottom" data-delay="50" data-tooltip="Masculine" id="der" name="der">Der</a>
+    <a class="btn tooltipped red z-depth-2" data-position="bottom" data-delay="50" data-tooltip="Feminine" id="die" name="die">Die</a>
+    <a class="btn tooltipped red z-depth-2" data-position="bottom" data-delay="50" data-tooltip="Something else" id="das" name="das">Das</a>
   </div>
 
 
@@ -128,11 +151,10 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Maksim Hranin</a>
       </div>
     </div>
   </footer>
-
 
   <!--  Scripts-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.7.0/vis.min.js"></script>
@@ -142,7 +164,7 @@
   <script src="js/ui.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/ajax.js" type="text/javascript" charset="utf-8"></script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="../../bin/materialize.js"></script>
+  <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
 
   </body>

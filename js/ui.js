@@ -1,6 +1,8 @@
-// $(document)..ready(function(){
+$(document).ready(function(){
 
-  // $(".dropdown-button").dropdown();
+  $('.materialboxed').materialbox();
+
+  $('.tooltipped').tooltip({delay: 20});
 
   $('#start').on('click', function(e){
     nextWord();
@@ -42,4 +44,4 @@
   });
 
 
-// });
+});
