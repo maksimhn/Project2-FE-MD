@@ -117,5 +117,6 @@ var updateGraph = function (graph, data, stats_or_rate, quizzes, limit) {
 
 var userToken;
 var userId;
+var wordId;
 var wordGen;
 var searchRequest = '';

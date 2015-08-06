@@ -73,8 +73,14 @@ h3, #genderbuttons {
   max-height: 260px;
 }
 
-#deleteuser {
-  margin-top: 60px;
+#deleteuser, #updatewordbutton {
+  float: left;
+  margin-top: 50px;
+  /*margin-top: 60px;*/
   /*position: relative;
     left: 30%;*/
+}
+
+#deleteuser {
+
 }

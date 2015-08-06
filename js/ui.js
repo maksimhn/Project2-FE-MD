@@ -50,4 +50,8 @@ $(document).ready(function(){
     destroyUser();
   });
 
+  $('.genderselector').on('click', function(e){
+    updateWord($(this).html().slice(0,3));
+  });
+
 });

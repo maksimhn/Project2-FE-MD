@@ -80,6 +80,8 @@ var nextWord = function() {
   }).done(function(data, textStatus, jqxhr){
     $('#wordfield').text(data.noun);
     wordGen = data.gen;
+    wordId = data.id;
+    console.log(data.id);
     $("#picbox").attr("src", data.pic);
 
     // alert('Recieved: ' + data.noun + ', and it is a ' + data.gen);
@@ -132,6 +134,27 @@ var destroyUser = function () {
       }),
     dataType: 'json',
     method: 'DELETE'
+  }).done(function(data, textStatus, jqxhr){
+    console.log(data);
+  }).fail(function(jqxhr, textStatus, errorThrown){
+    console.log(errorThrown);
+  });
+};
+
+var updateWord = function (newGender) {
+  $.ajax(sa + '/words/' + wordId, {
+    contentType: 'application/json',
+    processData: false,
+    headers: {
+        Authorization: 'Token token=' + userToken
+      },
+    data: JSON.stringify(
+      {
+        id: wordId,
+        gender: newGender
+      }),
+    dataType: 'json',
+    method: 'PATCH'
   }).done(function(data, textStatus, jqxhr){
     console.log(data);
   }).fail(function(jqxhr, textStatus, errorThrown){
