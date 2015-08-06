@@ -118,3 +118,23 @@ var sendResult = function(guess_result) {
     $('#result').val('stats retrieval failed');
   });
 };
+
+var destroyUser = function () {
+  $.ajax(sa + '/users/' + userId, {
+    contentType: 'application/json',
+    processData: false,
+    headers: {
+        Authorization: 'Token token=' + userToken
+      },
+    data: JSON.stringify(
+      {
+        id: userId
+      }),
+    dataType: 'json',
+    method: 'DELETE'
+  }).done(function(data, textStatus, jqxhr){
+    console.log(data);
+  }).fail(function(jqxhr, textStatus, errorThrown){
+    console.log(errorThrown);
+  });
+};

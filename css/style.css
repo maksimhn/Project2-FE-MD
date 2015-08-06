@@ -60,13 +60,21 @@ h3, #genderbuttons {
 #picframe {
   /*margin: 0 auto;*/
   border-radius: 3px;
-  max-width: 500px;
+  width: 340px;
   height: 300px;
 }
 
 #picbox {
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  max-width: 460px;
+  max-width: 300px;
   max-height: 260px;
+}
+
+#deleteuser {
+  margin-top: 60px;
+  /*position: relative;
+    left: 30%;*/
 }

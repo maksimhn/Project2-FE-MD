@@ -46,5 +46,8 @@ $(document).ready(function(){
     Materialize.toast(toastMessage(guess_result), 4000);
   });
 
+  $('#deleteuser').on('click', function(e){
+    destroyUser();
+  });
 
 });

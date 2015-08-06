@@ -15,6 +15,7 @@
 
 <body>
 
+  <!-- Navbar -->
   <nav class="light-green lighten-1" role="navigation" id="mainnav">
     <div class="nav-wrapper container"><!-- <a id="logo-container" href="#" class="brand-logo">Logo</a> -->
     <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -38,17 +39,25 @@
     <div class="container">
       <br><br>
       <h3 class="header center green-text">Guess a Deutche noun's gender quiz!</h3>
+
+      <!-- Statistics graph -->
       <div class="row">
         <div class="col l3 offset-l1 light-green z-depth-2" id="stats_box">
           <canvas id="statsgraph" width="180" height="195"></canvas>
         </div>
+
+        <!-- Pictureframe -->
         <div class="col l4 offset-l1 light-green z-depth-2" id="picframe">
           <img class="card-panel" id="picbox" src=>
         </div>
+
+        <!-- Winning rate graph -->
         <div class="col l3 offset-l1 light-green z-depth-2" id="rate_box">
           <canvas id="rategraph" width="180" height="195"></canvas>
         </div>
       </div>
+
+      <!-- Central div with wordframe -->
       <div class="row center">
         <div class="col l4 offset-l4 offset-s5">
           <div class="card-panel red z-depth-1" id="wordframe">
@@ -58,6 +67,7 @@
         </div>
       </div>
 
+      <!-- Hit me button -->
       <div class="row center">
         <a id="start" class="btn-large waves-effect waves-light green z-depth-2">Hit me</a>
       </div>
@@ -66,6 +76,7 @@
     </div>
   </div>
 
+  <!-- Quiz answering buttons -->
   <div class="container center" id="genderbuttons">
     <a class="btn tooltipped red z-depth-2" data-position="bottom" data-delay="50" data-tooltip="Masculine" id="der" name="der">Der</a>
     <a class="btn tooltipped red z-depth-2" data-position="bottom" data-delay="50" data-tooltip="Feminine" id="die" name="die">Die</a>
@@ -74,14 +85,15 @@
 
   <br><br>
 
+  <!-- Footer -->
   <footer class="page-footer light-green">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
+        <div class="col l3 s12">
           <h5 class="white-text">Stats reset</h5>
-          <p class="white-text text-lighten-4">You can reset your statistic data and progress by clicking the button on the right. Beware, the data cannot be restored!</p>
+          <p class="white-text text-lighten-4">You can reset your user and progress data by clicking the button on the right. Beware, the data cannot be restored!</p>
         </div>
-          <a class="red btn-large" id="reset">Reset User Data</a>
+          <a class="red btn" id="deleteuser">Reset User Data</a>
       </div>
       <div class="footer-copyright">
         <div class="container">
