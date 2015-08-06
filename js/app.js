@@ -125,7 +125,7 @@ var toggleElements = function (token, email) {
     $('#email_icon').hide();
     $('#or').hide();
     $('#logout').show();
-    $('#logo-container').text("Logged in as " + email);
+    $('#logo-container').text("Logged in as " + email + ". Hit a green \"HIT ME\" button below to start!");
   } else {
     $('#register').show();
     $('#login').show();

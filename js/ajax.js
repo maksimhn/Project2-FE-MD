@@ -1,5 +1,7 @@
 
-var sa = '//localhost:3000';
+// var sa = '//localhost:3000';
+var sa = 'https://powerful-sands-2723.herokuapp.com';
+
 var checkGuess = function(userGuess) {
   return userGuess === wordGen ? true : false;
 };

@@ -40,13 +40,14 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h3 class="header center red-text" id="headertext">Guess a Deutche noun's gender!</h3>
+      <h3 class="header center red-text " id="headertext">Guess a Deutche noun's gender!</h3>
 
       <!-- Statistics graph -->
       <div class="row">
-        <div class="col l3 offset-l1 light-green z-depth-2" id="stats_box">
+        <div class="col l3 offset-l1 light-green z-depth-2 tooltipped" data-position="bottom" data-delay="50" data-tooltip="Progress graph" id="stats_box">
           <canvas id="statsgraph" width="180" height="195"></canvas>
         </div>
+
 
         <!-- Pictureframe -->
         <div class="col l4 offset-l1 light-green z-depth-2" id="picframe">
@@ -54,7 +55,7 @@
         </div>
 
         <!-- Winning rate graph -->
-        <div class="col l3 offset-l1 light-green z-depth-2" id="rate_box">
+        <div class="col l3 offset-l1 light-green z-depth-2 tooltipped" data-position="bottom" data-delay="50" data-tooltip="Success rate graph" id="rate_box">
           <canvas id="rategraph" width="180" height="195"></canvas>
         </div>
       </div>
@@ -62,7 +63,7 @@
       <!-- Central div with wordframe -->
       <div class="row center">
         <div class="col l4 offset-l4 offset-s5">
-          <div class="card-panel red z-depth-1" id="wordframe">
+          <div class="card-panel red z-depth-2" id="wordframe">
             <span class="white-text" id="wordfield">Word
             </span>
           </div>
