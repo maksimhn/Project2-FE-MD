@@ -26,7 +26,12 @@ var signIn = function() {
   }).done(function(data, textStatus, jqxhr){
     userToken = data.token;
     userId = data.id;
-    $('#result').val('token: ' + data.token + ', stats: ' + data.stats + ', rate: ' + data.rate + ', id: ' + data.id);
+
+    // (graph, data, stats_or_rate, quizzes, limit)
+    updateGraph(progressGraph, progressData, [data.stats], data.quizzes, 5);
+    updateGraph(rateGraph, rateData, [data.rate], data.quizzes, 5);
+    // console.log(data.quizzes);
+    // console.log('token: ' + data.token + ', stats: ' + data.stats + ', rate: ' + data.rate + ', id: ' + data.id);
     // $('#result').val(data.stats);
     // $('#result').val(data.rate);
     //$('#maincontainer > p').append('<h4>Logged in as ' + data.credentials.email + '</h4>');
@@ -76,6 +81,7 @@ var nextWord = function() {
     $('#wordfield').text(data.noun);
     wordGen = data.gen;
     $("#picbox").attr("src", data.pic);
+
     // alert('Recieved: ' + data.noun + ', and it is a ' + data.gen);
     // search API trigger
   }).fail(function(jqxhr, textStatus, errorThrown){
@@ -102,7 +108,10 @@ var sendResult = function(guess_result) {
     method: 'POST'
   }).done(function(data, textStatus, jqxhr){
     // data = JSON.stringify(data);
-    $('#result').val(JSON.stringify(data));
+    // $('#result').val(JSON.stringify(data));
+    updateGraph(progressGraph, progressData, [data.stats], data.quizzes, 5);
+    updateGraph(rateGraph, rateData, [data.rate], data.quizzes, 5);
+    console.log(data.quizzes);
     console.log(data.rate + ' is rate, ' + data.stats + ' is stats!' )
     // nextWord();
   }).fail(function(jqxhr, textStatus, errorThrown){

@@ -33,6 +33,15 @@
   margin-top: 20px;
 }
 
+#rate_box, #stats_box {
+  width: 210px;
+  height: 210px;
+}
+
+#stats_box {
+  margin-left: 47px;
+}
+
 #reset {
   float:right;
   margin-right: 10px;
@@ -49,7 +58,7 @@ h3, #genderbuttons {
 }
 
 #picframe {
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   border-radius: 3px;
   max-width: 500px;
   height: 300px;

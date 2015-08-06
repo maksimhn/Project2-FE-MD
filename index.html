@@ -38,10 +38,17 @@
     <div class="container">
       <br><br>
       <h3 class="header center green-text">Guess a Deutche noun's gender quiz!</h3>
-      <div class="row center light-green z-depth-2" id="picframe">
-        <img class="card-panel" id="picbox" src=>
+      <div class="row">
+        <div class="col l3 offset-l1 light-green z-depth-2" id="stats_box">
+          <canvas id="statsgraph" width="180" height="195"></canvas>
+        </div>
+        <div class="col l4 offset-l1 light-green z-depth-2" id="picframe">
+          <img class="card-panel" id="picbox" src=>
+        </div>
+        <div class="col l3 offset-l1 light-green z-depth-2" id="rate_box">
+          <canvas id="rategraph" width="180" height="195"></canvas>
+        </div>
       </div>
-
       <div class="row center">
         <div class="col l4 offset-l4 offset-s5">
           <div class="card-panel red z-depth-1" id="wordframe">
@@ -78,14 +85,14 @@
       </div>
       <div class="footer-copyright">
         <div class="container">
-        Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Maksim Hranin</a>
+        Made by <a class="orange-text text-lighten-3" href="https://github.com/maksimhn">Maksim Hranin</a>
         </div>
       </div>
     </div>
   </footer>
 
   <!--  Scripts-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.7.0/vis.min.js"></script>
+  <script src="js/Chart.js"></script>
   <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/bing.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
