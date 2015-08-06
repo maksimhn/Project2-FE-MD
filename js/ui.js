@@ -20,14 +20,6 @@ $(document).ready(function(){
     signIn();
   });
 
-  $('#previous').on('click', function(e){
-
-  });
-
-  $('#next').on('click', function(e){
-    nextWord();
-  });
-
   $('#das').on('click', function(e){
     var guess_result = $(this).attr('name');
     sendResult(guess_result);
@@ -53,5 +45,7 @@ $(document).ready(function(){
   $('.genderselector').on('click', function(e){
     updateWord($(this).html().slice(0,3));
   });
+
+  toggleElements(userToken, userEmail);
 
 });

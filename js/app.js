@@ -115,7 +115,32 @@ var updateGraph = function (graph, data, stats_or_rate, quizzes, limit) {
   graph.update();
 };
 
+var toggleElements = function (token, email) {
+  if (token) {
+    $('#register').hide();
+    $('#login').hide();
+    $('#password').hide();
+    $('#email').hide();
+    $('#vpn_icon').hide();
+    $('#email_icon').hide();
+    $('#or').hide();
+    $('#logout').show();
+    $('#logo-container').text("Logged in as " + email);
+  } else {
+    $('#register').show();
+    $('#login').show();
+    $('#or').show();
+    $('#password').show();
+    $('#email').show();
+    $('#vpn_icon').show();
+    $('#email_icon').show();
+    $('#logout').hide();
+    $('#logo-container').text("Please log in to start quiz");
+  }
+};
+
 var userToken;
+var userEmail;
 var userId;
 var wordId;
 var wordGen;

@@ -6,6 +6,11 @@
  * Made By MaterializeCSS.com
  */
 
+body {
+  background: url('../images/background.jpg');
+  background-size: 100% auto;
+}
+
 .icon-block {
   padding: 0 15px;
 }
@@ -19,6 +24,15 @@
 
 #email, #password {
   margin-right: 20px;
+}
+
+#register, #logout {
+  margin-right: 30px;
+}
+
+#logo-container {
+  margin-left: -300px;
+  margin-top: 17px;
 }
 
 #mainnav {

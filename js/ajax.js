@@ -26,7 +26,8 @@ var signIn = function() {
   }).done(function(data, textStatus, jqxhr){
     userToken = data.token;
     userId = data.id;
-
+    userEmail = data.email;
+    toggleElements(userToken, userEmail);
     // (graph, data, stats_or_rate, quizzes, limit)
     updateGraph(progressGraph, progressData, [data.stats], data.quizzes, 5);
     updateGraph(rateGraph, rateData, [data.rate], data.quizzes, 5);
