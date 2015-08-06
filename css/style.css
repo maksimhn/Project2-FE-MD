@@ -18,6 +18,10 @@ body {
 	font-size: inherit;
 }
 
+#headertext {
+  font-weight: bolder;
+}
+
 #email_icon, #vpn_icon {
   margin-right: 5px;
 }
@@ -33,6 +37,7 @@ body {
 #logo-container {
   margin-left: -300px;
   margin-top: 17px;
+  font-weight: bold;
 }
 
 #mainnav {
@@ -45,6 +50,7 @@ body {
 
 #wordframe {
   margin-top: 20px;
+  font-size: 150%;
 }
 
 #rate_box, #stats_box {
@@ -90,11 +96,4 @@ h3, #genderbuttons {
 #deleteuser, #updatewordbutton {
   float: left;
   margin-top: 50px;
-  /*margin-top: 60px;*/
-  /*position: relative;
-    left: 30%;*/
-}
-
-#deleteuser {
-
 }

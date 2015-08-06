@@ -13,7 +13,7 @@ $(document).ready(function(){
   });
 
   $('#logout').on('click', function(e){
-
+    location.reload();
   });
 
   $('#login').on('click', function(e){
