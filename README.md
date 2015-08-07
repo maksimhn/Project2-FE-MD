@@ -29,6 +29,7 @@ https://docs.google.com/drawings/d/1LFQGDEgBuonsDaW8BKbI89uw8Bt88bSdq0J1kB9eBLE/
 
 To Do List:
  - Make responsive, mobile-friendly design
+ - Implement SoC, safer token storage
  - Add few more languages
  - Add an ability to upload words by users
 
