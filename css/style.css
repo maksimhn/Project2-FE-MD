@@ -1,10 +1,3 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
 
 body {
   background: url('../images/background.jpg');
@@ -22,14 +15,17 @@ body {
   font-weight: bolder;
 }
 
+/*Navbar icons*/
 #email_icon, #vpn_icon {
   margin-right: 5px;
 }
 
+/*Navbar fields*/
 #email, #password {
   margin-right: 20px;
 }
 
+/*Navbar buttons*/
 #register, #logout {
   margin-right: 30px;
 }
@@ -44,6 +40,7 @@ body {
   height: 72px;
 }
 
+/*HIT ME button*/
 #start {
   margin-top: 0px;
 }
@@ -53,6 +50,7 @@ body {
   font-size: 150%;
 }
 
+/*Frames for graphs*/
 #rate_box, #stats_box {
   width: 210px;
   height: 210px;
@@ -61,19 +59,11 @@ body {
 
 #rate_box {
   float: left;
-  /*position: relative;*/
-  /*display: inline;*/
 }
 
 #stats_box {
   float: left;
   margin-left: 47px;
-}
-
-#reset {
-  float:right;
-  margin-right: 10px;
-  margin-top: 40px;
 }
 
 h3, #genderbuttons {
@@ -85,33 +75,28 @@ h3, #genderbuttons {
   margin-right: 15px;
 }
 
+/*Picture frame*/
 #picframe {
   float: left;
   margin-left: 88px;
-  /*margin: 0 auto;*/
   border-radius: 3px;
   width: 340px;
   height: 260px;
-  /*margin-top: auto;
-  margin-bottom: auto;
-  vertical-align: middle;*/
-  /*display: inline-block;*/
 }
 
+/*Picture containing box*/
 #picbox {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  /*margin: auto;*/
-  /*display: inline-block;*/
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 0px;
-  /*margin-bottom: 20px;*/
   max-width: 300px;
   max-height: 220px;
 }
 
+/*Footer buttons*/
 #deleteuser, #updatewordbutton {
   float: left;
   margin-top: 50px;

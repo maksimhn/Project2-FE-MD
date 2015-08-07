@@ -2,6 +2,7 @@
 var ctx = document.getElementById("rategraph").getContext("2d");
 var stx = document.getElementById("statsgraph").getContext("2d");
 
+// data for progress graph
 var progressData = {
     labels: ["0"],
     datasets: [
@@ -18,6 +19,7 @@ var progressData = {
     ]
 };
 
+// data for success rate graph
 var rateData = {
     labels: ["0"],
     datasets: [
@@ -34,6 +36,7 @@ var rateData = {
     ]
 };
 
+// options for progress graph
 var progressOptions =
 {
     ///Boolean - Whether grid lines are shown across the chart
@@ -68,6 +71,7 @@ var progressOptions =
     legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
 };
 
+// options for success rate graph
 var rateOptions =
 {
     ///Boolean - Whether grid lines are shown across the chart
@@ -102,11 +106,11 @@ var rateOptions =
     legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
 };
 
-// new Chart(ctx).Line(data, options);
+// charts initializers
 var rateGraph = new Chart(ctx).Line(rateData, rateOptions);
 var progressGraph = new Chart(stx).Line(progressData, progressOptions);
 
-
+// updates graphs' data according with fresh data from the server, calls update methods
 var updateGraph = function (graph, data, stats_or_rate, quizzes, limit) {
   if (data.labels.length >= limit) {
     graph.removeData();
@@ -115,6 +119,7 @@ var updateGraph = function (graph, data, stats_or_rate, quizzes, limit) {
   graph.update();
 };
 
+// Hides or shows elements depending on user's status
 var toggleElements = function (token, email) {
   if (token) {
     $('#register').hide();
@@ -139,9 +144,6 @@ var toggleElements = function (token, email) {
   }
 };
 
-var userToken;
-var userEmail;
-var userId;
-var wordId;
-var wordGen;
+// declares storage variables for Token, Email, IDs and current word's gender
+var userToken, userEmail, userId, wordId, wordGen;
 var searchRequest = '';
