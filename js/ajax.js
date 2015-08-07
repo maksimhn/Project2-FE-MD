@@ -1,4 +1,4 @@
-
+// link to the server
 // var sa = '//localhost:3000';
 var sa = 'https://powerful-sands-2723.herokuapp.com';
 
@@ -80,7 +80,6 @@ var nextWord = function() {
     $('#wordfield').text(data.noun);
     wordGen = data.gen;
     wordId = data.id;
-    console.log(data.id);
     $("#picbox").attr("src", data.pic);
   }).fail(function(jqxhr, textStatus, errorThrown){
     console.log('Word retrieval failed.');
