@@ -56,9 +56,17 @@ body {
 #rate_box, #stats_box {
   width: 210px;
   height: 210px;
+  padding-top: 10px;
+}
+
+#rate_box {
+  float: left;
+  /*position: relative;*/
+  /*display: inline;*/
 }
 
 #stats_box {
+  float: left;
   margin-left: 47px;
 }
 
@@ -78,19 +86,30 @@ h3, #genderbuttons {
 }
 
 #picframe {
+  float: left;
+  margin-left: 88px;
   /*margin: 0 auto;*/
   border-radius: 3px;
   width: 340px;
-  height: 300px;
+  height: 260px;
+  /*margin-top: auto;
+  margin-bottom: auto;
+  vertical-align: middle;*/
+  /*display: inline-block;*/
 }
 
 #picbox {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  /*margin: auto;*/
+  /*display: inline-block;*/
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 0px;
+  /*margin-bottom: 20px;*/
   max-width: 300px;
-  max-height: 260px;
+  max-height: 220px;
 }
 
 #deleteuser, #updatewordbutton {
