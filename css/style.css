@@ -25,6 +25,10 @@ body {
   margin-right: 20px;
 }
 
+#password :hover {
+
+}
+
 /*Navbar buttons*/
 #register, #logout {
   margin-right: 30px;
@@ -59,12 +63,38 @@ body {
 
 #rate_box {
   float: left;
+  display: inline-grid;
 }
 
 #stats_box {
   float: left;
-  margin-left: 47px;
+  margin-left: 13.5%;
 }
+
+@media screen and (width: 1280px) {
+    #stats_box {
+        margin-left: 10.5%;
+    }
+}
+
+@media screen and (width: 1366px) {
+    #stats_box {
+        margin-left: 12%;
+    }
+}
+
+@media screen and (width: 1920px) {
+    #stats_box {
+        margin-left: 20%;
+    }
+}
+
+@media screen and (width: 1680px) {
+    #stats_box {
+        margin-left: 17%;
+    }
+}
+
 
 h3, #genderbuttons {
   margin-top: -30px;
@@ -78,7 +108,9 @@ h3, #genderbuttons {
 /*Picture frame*/
 #picframe {
   float: left;
-  margin-left: 88px;
+  margin-left: 10%;
+  margin-right: 10%;
+  /*margin-left: 88px;*/
   border-radius: 3px;
   width: 340px;
   height: 260px;
